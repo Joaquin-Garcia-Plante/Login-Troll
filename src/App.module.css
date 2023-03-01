@@ -64,13 +64,15 @@
   margin: 0 auto;
 }
 
-.btnSubmitTroll {
+.btnSubmitContainer {
   margin: 0 auto;
-  transition: 2s;
 }
 
-.btnSubmitTroll:hover {
-  animation-delay: 1.5s;
-  transition-delay: 0.05s;
-  transform: translateX(500px);
+.btnSubmitTroll {
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.btnSubmitContainer:hover .btnSubmitTroll {
+  transform: translateX(200px);
 }

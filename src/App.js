@@ -35,8 +35,10 @@ function App() {
             <input type="submit" />
           </div>
         ) : (
-          <div className={styles.btnSubmitTroll}>
-            <input type="submit" />
+          <div className={styles.btnSubmitContainer}>
+            <div className={styles.btnSubmitTroll}>
+              <input type="submit" />
+            </div>
           </div>
         )}
       </form>
