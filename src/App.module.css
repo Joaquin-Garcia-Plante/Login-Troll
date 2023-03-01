@@ -1,0 +1,76 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputEmail {
+  width: 248px;
+  padding: 5px;
+  margin: 0 auto;
+  height: 25px;
+  border: solid 1px gray;
+  text-decoration: none;
+  background-color: white;
+  appearance: none;
+  outline: transparent solid 2px;
+}
+
+.inputEmail:-webkit-autofill {
+  -webkit-box-shadow: 200px 200px 100px white inset;
+  box-shadow: 200px 200px 100px white inset;
+}
+
+.inputPwContainer {
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  height: 37px;
+  background: 0% 0%;
+}
+
+.inputPassword {
+  width: 196px;
+  border: solid 1px gray;
+  text-decoration: none;
+  border-right: none;
+  appearance: none;
+  outline: transparent solid 2px;
+}
+
+.inputPassword:-webkit-autofill {
+  -webkit-box-shadow: 200px 200px 100px white inset;
+  box-shadow: 200px 200px 100px white inset;
+}
+
+.btnEyeIcon {
+  width: 48px;
+  border: solid 1px gray;
+  border-left: none;
+  padding: 5px;
+  text-align: end;
+  background-color: white;
+}
+
+.eyeIcon {
+  padding: 5px;
+  color: black;
+}
+
+.checkbox {
+  margin: 0 auto;
+}
+
+.btnSubmit {
+  margin: 0 auto;
+}
+
+.btnSubmitTroll {
+  margin: 0 auto;
+  transition: 2s;
+}
+
+.btnSubmitTroll:hover {
+  animation-delay: 1.5s;
+  transition-delay: 0.05s;
+  transform: translateX(500px);
+}
