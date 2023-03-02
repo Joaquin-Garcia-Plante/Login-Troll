@@ -1,18 +1,27 @@
 .formContainer {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .inputEmail {
-  width: 248px;
+  width: 252px;
+  border-radius: 0.5rem;
   padding: 5px;
-  margin: 0 auto;
   height: 25px;
-  border: solid 1px gray;
+  border: solid 2px gray;
   text-decoration: none;
   background-color: white;
   appearance: none;
   outline: transparent solid 2px;
+}
+
+.inputEmail:hover {
+  border: solid 2px blue;
+}
+.inputEmail:focus {
+  border: solid 2px blue;
 }
 
 .inputEmail:-webkit-autofill {
@@ -23,18 +32,39 @@
 .inputPwContainer {
   display: flex;
   align-content: center;
-  margin: 0 auto;
   height: 37px;
   background: 0% 0%;
 }
 
 .inputPassword {
-  width: 196px;
-  border: solid 1px gray;
+  width: 220px;
+  border: solid 2px gray;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
   text-decoration: none;
   border-right: none;
   appearance: none;
   outline: transparent solid 2px;
+}
+
+.inputPassword:hover {
+  border: solid 2px blue;
+  border-right: none;
+}
+
+.inputPassword:focus {
+  border: solid 2px blue;
+  border-right: none;
+}
+
+.inputPassword:hover + .btnEyeIcon {
+  border: solid 2px blue;
+  border-left: none;
+}
+.inputPassword:focus + .btnEyeIcon {
+  border: solid 2px blue;
+  border-left: none;
 }
 
 .inputPassword:-webkit-autofill {
@@ -43,10 +73,12 @@
 }
 
 .btnEyeIcon {
-  width: 48px;
-  border: solid 1px gray;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 30px;
+  border: solid 2px gray;
   border-left: none;
-  padding: 5px;
+  padding: 4px;
   text-align: end;
   background-color: white;
 }
@@ -60,18 +92,31 @@
   margin: 0 auto;
 }
 
-.btnSubmit {
+.btnSubmitNoTrollContainer {
+  text-align: center;
   margin: 0 auto;
+  width: 400px;
+  height: 50px;
+}
+
+.btnSubmit {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 100px;
+  height: 30px;
 }
 
 .btnSubmitContainer {
-  /* margin: 0 auto; */
   text-align: center;
+  transition: 1s;
 }
 
 .btnSubmitTroll {
-  /* margin: 0 auto; */
+  border: 1px solid black;
+  width: 100px;
+  height: 30px;
   transition: 1s;
+  border-radius: 0.5rem;
 }
 
 .btnSubmitContainer:hover .btnSubmitTroll {
